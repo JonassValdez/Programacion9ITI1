@@ -7,7 +7,7 @@ public class Operaciones {
 	/**
 	 * 
 	 * @param n1
-	 * @return
+	 * @return n1 * n1
 	 */
 	public double cuadrado(double n1) {
 		return n1 * n1;
@@ -17,7 +17,7 @@ public class Operaciones {
 	 * 
 	 * @param n1
 	 * @param n2
-	 * @return
+	 * @return n1 * n2
 	 */
 	public double rectangulo(double n1, double n2) {
 		return n1 * n2;
@@ -27,7 +27,7 @@ public class Operaciones {
 	 * 
 	 * @param n1
 	 * @param n2
-	 * @return
+	 * @return (n1 * n2) / 2
 	 */
 	public double triangulo(double n1, double n2) {
 		return (n1 * n2) / 2;
@@ -36,7 +36,7 @@ public class Operaciones {
 	/**
 	 * 
 	 * @param n1
-	 * @return
+	 * @return Math.PI * (radio * radio)
 	 */
 	public double circulo(double n1) {
 		double radio = n1 / (2 * Math.PI);
