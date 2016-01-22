@@ -1,0 +1,12 @@
+package modelo;
+
+public class Cuadrado implements Perimetros{
+
+	@Override
+	public double perimetro(double l1, double base, double altura, double lt1, double lt2, double lt3,
+			double diametro) {
+		// TODO Auto-generated method stub
+		return l1*4;
+	}
+
+}

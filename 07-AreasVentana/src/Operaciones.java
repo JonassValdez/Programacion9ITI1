@@ -39,8 +39,8 @@ public class Operaciones {
 	 * @return Math.PI * (radio * radio)
 	 */
 	public double circulo(double n1) {
-		double radio = n1 / (2 * Math.PI);
-		return Math.PI * (radio * radio);
+		double radio = n1*n1 ;
+		return Math.PI * radio;
 	}
 	
 }

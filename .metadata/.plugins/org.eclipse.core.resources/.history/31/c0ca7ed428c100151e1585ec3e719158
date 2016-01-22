@@ -1,0 +1,15 @@
+
+import vista.VentanaMenu;
+
+
+public class AppOperaciones {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+VentanaRectangulo vtn=new VentanaRectangulo();
+
+vtn.setVisible(true);
+
+	}
+
+}

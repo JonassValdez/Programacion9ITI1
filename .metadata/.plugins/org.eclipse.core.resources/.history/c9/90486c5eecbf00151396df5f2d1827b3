@@ -1,0 +1,8 @@
+package modelo;
+
+public interface Operaciones {
+
+	public double perimetro(double l1, double base, double altura, double lt1, double lt2, double lt3, double diametro);
+	public double area(double l1, double base, double altura, double lt1, double lt2, double lt3, double diametro);
+	
+}

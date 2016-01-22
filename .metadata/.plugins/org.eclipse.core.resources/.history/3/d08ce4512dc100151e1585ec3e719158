@@ -1,0 +1,16 @@
+package modelo;
+
+public class Rectangulo implements Operaciones{
+
+	public  static double perimetro(double base, double altura) {
+		// TODO Auto-generated method stub
+		return 2*(base+altura);
+	}
+
+
+	public static double area(double base, double altura) {
+		// TODO Auto-generated method stub
+		return base*altura;
+	}
+
+}

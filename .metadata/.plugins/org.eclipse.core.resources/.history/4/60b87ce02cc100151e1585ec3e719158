@@ -1,0 +1,16 @@
+package modelo;
+
+public class Circulo implements Operaciones{
+
+	public static  double perimetro(double diametro) {
+		// TODO Auto-generated method stub
+		return   2 * Math.PI * diametro;
+	}
+
+
+	public static double area(double diametro) {
+		// TODO Auto-generated method stub
+		return Math.PI * (Math.pow(diametro, 2));
+	}
+
+}

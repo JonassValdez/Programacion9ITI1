@@ -1,0 +1,8 @@
+package modelo;
+
+public interface Operaciones {
+	public int operaciones(int n1, int n2);
+	public double oper(double n1, double n2);
+	
+
+}

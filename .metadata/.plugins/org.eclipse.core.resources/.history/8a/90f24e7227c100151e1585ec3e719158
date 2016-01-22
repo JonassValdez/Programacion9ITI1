@@ -1,0 +1,71 @@
+package vista;
+import java.awt.Container;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+import modelo.Circulo;
+import modelo.Operaciones;
+/**
+ * 
+ * @author Jonthan Valdez Gayosso
+ *
+ */
+public class VentanaCirculo extends JFrame implements ActionListener{
+	
+	private JTextField txtN1= new JTextField();
+	
+	private JLabel lbN1= new JLabel("Ingresa el diametro:");
+	
+	private JLabel lbResultado= new JLabel("Resultado");
+	
+	private JButton btnPerimetro= new JButton("Perimetro");
+	private JButton btnArea= new JButton("Area");
+	private Container c= getContentPane();
+	
+	
+
+	
+	
+	public VentanaCirculo(){
+		super.setTitle("Círculo");
+		super.setSize(320, 280);
+		cargarControles();
+	}
+
+	private void cargarControles() {
+		
+		c.setLayout(null);
+		lbN1.setBounds(10,10, 280, 30);
+		txtN1.setBounds(10, 40, 280, 30);
+
+		btnPerimetro.setBounds(10, 80, 280, 30);
+		btnArea.setBounds(10, 130, 280, 30);
+		lbResultado.setBounds(10,160, 280,30);
+		c.add(lbN1);
+		c.add(txtN1);
+		c.add(btnPerimetro);
+		c.add(btnArea);
+		c.add(lbResultado);
+		btnPerimetro.addActionListener(this);
+		btnArea.addActionListener(this);
+	}
+
+	public void actionPerformed(ActionEvent arg0) {
+		if(arg0.getSource()==btnPerimetro){
+		
+		double r = Circulo.perimetro( Double.parseDouble(txtN1.getText()));
+		lbResultado.setText(String.format("El perímetro del círculo es: %f" ,r)); 		
+		}
+		
+		if(arg0.getSource()==btnArea){
+			
+			double r = Circulo.area(0, 0, 0, 0, 0, 0, Double.parseDouble(txtN1.getText()));
+			lbResultado.setText(String.format("El area del círculo es: %f" ,r)); 		
+			}
+	}
+}

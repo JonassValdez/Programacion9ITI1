@@ -1,0 +1,8 @@
+package modelo;
+
+public class Triangulos implements Operaciones {
+
+	public double area(double lt1, double lt2) {
+		return (lt1 * lt2) / 2;
+	}
+}

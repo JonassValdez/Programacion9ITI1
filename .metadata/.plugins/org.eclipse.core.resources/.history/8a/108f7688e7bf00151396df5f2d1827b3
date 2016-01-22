@@ -1,0 +1,6 @@
+
+public class Perimetros {
+	public double perimetroCuadrado(double n1){
+		return n1 * 4;
+	}
+}

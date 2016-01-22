@@ -1,0 +1,14 @@
+import vista.VentanaCirculo;
+
+
+public class AppOperaciones {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+VentanaCirculo vtn=new VentanaCirculo();
+
+vtn.setVisible(true);
+
+	}
+
+}
